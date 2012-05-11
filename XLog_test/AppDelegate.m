@@ -30,6 +30,12 @@
     [self.window addSubview:btn];
     [btn addTarget:self action:@selector(onButtonClick) forControlEvents:UIControlEventTouchUpInside];
 
+    // util test
+    char *path = "b.txt";
+    char name[100];
+    _XLog_getFileName(path, name);
+    printf("file name:[%s]\n", name);
+
     return YES;
 }
 
